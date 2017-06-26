@@ -31,7 +31,7 @@ nav ul {
   float: right;
   background-color: #dee2e2;
   margin-top: 30px;
-  width: 40%;
+  width: 50%;
 }
 
 header {
@@ -110,6 +110,11 @@ header img {
 .subheading-link {
   font-size: 20px;
   flex-basis: 20%;
+}
+
+.subheading-link-content {
+  font-size: 20px;
+  flex-basis: 80%;
 }
 
 .subheading-content {
@@ -201,7 +206,7 @@ footer, .footer-spacer {
   font-size: 25px;
 }
 
-#learnMore {
+.goToSubPage, .goToSubPageTwo {
   font-family: "Segoe UI";
   font-size: 20px;
   font-weight: 700;
@@ -210,15 +215,15 @@ footer, .footer-spacer {
   margin-left: -6px;
 }
 
-#learnMore:focus {
+.goToSubPage:focus, .goToSubPageTwo:focus {
   outline: none;
 }
 
-#learnMore::after {
+.goToSubPage::after, .goToSubPageTwo::after {
   content: " >";
 }
 
-#goBack {
+.goBack {
   font-family: "Segoe UI";
   font-size: 20px;
   font-weight: 700;
@@ -226,7 +231,7 @@ footer, .footer-spacer {
   background-color: white;
 }
 
-#goBack:hover, #learnMore:hover {
+.goBack:hover, .goToSubPage:hover, .goToSubPageTwo:hover {
   color: #b5b5b5;
   border-bottom: 5px solid #7C8CF4;
   -webkit-transition: border-bottom 0.5s;
@@ -236,11 +241,11 @@ footer, .footer-spacer {
   cursor: pointer;
 }
 
-#goBack:focus {
+.goBack:focus {
   outline: none;
 }
 
-#goBack::before {
+.goBack::before {
   content: "< ";
 }
 
@@ -259,7 +264,12 @@ footer, .footer-spacer {
   margin-left: -110%;
 }
 
-.subSlideContent {
+.slideleftTwo .mainSlideContent {
+  width: 100%;
+  margin-left: -110%;
+}
+
+.subSlideContent, .subSlideContentTwo {
   width: 85%;
   margin-left: 110%;
   margin-top: -1400px;
@@ -274,6 +284,13 @@ footer, .footer-spacer {
   margin-left: 100px;
   margin-top: -1400px;
 }
+
+.slideleftTwo .subSlideContentTwo {
+  width: 85%;
+  margin-left: 100px;
+  margin-top: -1400px;
+}
+
 
 .fadein {
   opacity: 0;
