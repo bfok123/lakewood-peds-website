@@ -7,10 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-html, body {
-  height: 100%;
-}
-
 ul {
   margin: 0;
 }
@@ -94,8 +90,7 @@ header img {
   padding-top: 20px;
   margin-left: 100px;
   margin-right: 100px;
-  height: auto;
-  min-height: 100%;
+  min-height: calc(100vh - 190px);
 }
 
 .columns {
@@ -167,9 +162,7 @@ footer {
   padding-left: 100px;
   background: #dee2e2;
   padding-top: 5px;
-}
-
-footer, .footer-spacer {
+  margin-top: 10px;
   height: 50px;
 }
 
@@ -252,6 +245,7 @@ footer, .footer-spacer {
 /* TRANSITIONS */
 
 #mainSlideContent {
+  width: 100%;
   opacity: 1;
   margin-left: 100px;
   -moz-transition: margin-left 1s, opacity 1s;
@@ -261,6 +255,7 @@ footer, .footer-spacer {
 }
 
 #mainSlideContent.slideLeft, #mainSlideContent.slideLeftTwo {
+  width: 100%;
   opacity: 0;
   margin-left: -150%;
 }
