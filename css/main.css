@@ -44,7 +44,7 @@ header {
 
 .header-spacer {
   width: 100%;
-  height: 150px;
+  height: 140px;
 }
 
 header img {
@@ -56,10 +56,10 @@ header img {
 .navbtn:hover {
   color: #b5b5b5;
   padding-top: 25px;
-  -webkit-transition: border-top 0.5s;
-  -moz-transition: border-top 0.5s;
-  -o-transition: border-top 0.5s;
-  transition: border-top 0.5s;
+  -webkit-transition: border-top 0.5s, color 0.5s;
+  -moz-transition: border-top 0.5s, color 0.5s;
+  -o-transition: border-top 0.5s, color 0.5s;
+  transition: border-top 0.5s, color 0.5s;
   border-top-width: 5px;
   border-top-color: #7C8CF4;
   border-top-style: solid;
@@ -91,7 +91,7 @@ header img {
   padding-top: 20px;
   margin-left: 100px;
   margin-right: 100px;
-  min-height: calc(100vh - 190px);
+  min-height: calc(100vh - 221px);
 }
 
 .columns {
@@ -137,18 +137,29 @@ header img {
 .link:hover {
   color: #b5b5b5;
   border-bottom: 5px solid #7C8CF4;
-  -webkit-transition: border-bottom 0.5s;
-  -moz-transition: border-bottom 0.5s;
-  -o-transition: border-bottom 0.5s;
-  transition: border-bottom 0.5s;
+  -webkit-transition: border-bottom 0.5s, color 0.3s;
+  -moz-transition: border-bottom 0.5s, color 0.3s;
+  -o-transition: border-bottom 0.5s, color 0.3s;
+  transition: border-bottom 0.5s, color 0.3s;
   cursor: pointer;
 }
 
 /* FOOTER */
 
 #footer-fblogo {
-  height: 45px;
-  padding-left: 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: #3b5998;
+  margin-top: 2px;
+  height: 38px;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+#footer-fblogo:hover {
+  background-color: #5d8df4;
 }
 
 #footer-phoneicon {
@@ -164,7 +175,7 @@ footer {
   background: #dee2e2;
   padding-top: 5px;
   margin-top: 10px;
-  height: 50px;
+  height: 45px;
 }
 
 #footer-connect {
@@ -228,10 +239,10 @@ footer {
 .goBack:hover, #goToSubPage:hover, #goToSubPageTwo:hover, #goToSubPageThree:hover {
   color: #b5b5b5;
   border-bottom: 5px solid #7C8CF4;
-  -webkit-transition: border-bottom 0.5s;
-  -moz-transition: border-bottom 0.5s;
-  -o-transition: border-bottom 0.5s;
-  transition: border-bottom 0.5s;
+  -webkit-transition: border-bottom 0.5s, color 0.3s;
+  -moz-transition: border-bottom 0.5s, color 0.3s;
+  -o-transition: border-bottom 0.5s, color 0.3s;
+  transition: border-bottom 0.5s, color 0.3s;
   cursor: pointer;
 }
 
@@ -275,7 +286,7 @@ footer {
   position: static;
   width: 100%;
   opacity: 1;
-  margin-left: 100px;
+  margin-left: 0;
   -moz-transition: margin-left 1s, opacity 1s;
   -webkit-transition: margin-left 1s, opacity 1s;
   -o-transition: margin-left 1s, opacity 1s;
@@ -306,7 +317,7 @@ footer {
   top: 150px;
   width: 85%;
   opacity: 1;
-  margin-left: 100px;
+  margin-left: 0;
 }
 
 .fadein {
