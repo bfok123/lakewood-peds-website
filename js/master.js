@@ -8,6 +8,10 @@ window.onload = function() {
     document.getElementById("goToSubPageTwo").addEventListener("click", slideLeftTwo);
   }
 
+  if(document.getElementById("goToSubPageThree") != null) {
+    document.getElementById("goToSubPageThree").addEventListener("click", slideLeftThree);
+  }
+
   var goBackElements = document.getElementsByClassName("goBack");
   var j;
   for(j = 0; j < goBackElements.length; j++) {
@@ -29,6 +33,11 @@ function slideLeftTwo() {
   document.getElementById("subSlideContentTwo").className += " slideLeftTwo";
 }
 
+function slideLeftThree() {
+  document.getElementById("mainSlideContent").className += " slideLeftThree";
+  document.getElementById("subSlideContentThree").className += " slideLeftThree";
+}
+
 function slideRight() {
   var allElements = document.getElementsByTagName("*");
   var i;
@@ -37,6 +46,8 @@ function slideRight() {
         allElements[i].classList.remove("slideLeft");
     } else if(hasClass(allElements[i], "slideLeftTwo")) {
         allElements[i].classList.remove("slideLeftTwo");
+    } else if(hasClass(allElements[i], "slideLeftThree")) {
+        allElements[i].classList.remove("slideLeftThree");
     }
   }
 }

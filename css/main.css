@@ -5,6 +5,7 @@ body {
   font-family: "Segoe UI";
   max-width: 100%;
   overflow-x: hidden;
+  min-height: 100%;
 }
 
 ul {
@@ -199,7 +200,7 @@ footer {
   font-size: 25px;
 }
 
-#goToSubPage, #goToSubPageTwo {
+#goToSubPage, #goToSubPageTwo, #goToSubPageThree {
   font-family: "Segoe UI";
   font-size: 20px;
   font-weight: 700;
@@ -208,11 +209,11 @@ footer {
   margin-left: -6px;
 }
 
-#goToSubPage:focus, #goToSubPageTwo:focus {
+#goToSubPage:focus, #goToSubPageTwo:focus, #goToSubPageThree:focus {
   outline: none;
 }
 
-#goToSubPage::after, #goToSubPageTwo::after {
+#goToSubPage::after, #goToSubPageTwo::after, #goToSubPageThree::after {
   content: " >";
 }
 
@@ -224,7 +225,7 @@ footer {
   background-color: white;
 }
 
-.goBack:hover, #goToSubPage:hover, #goToSubPageTwo:hover {
+.goBack:hover, #goToSubPage:hover, #goToSubPageTwo:hover, #goToSubPageThree:hover {
   color: #b5b5b5;
   border-bottom: 5px solid #7C8CF4;
   -webkit-transition: border-bottom 0.5s;
@@ -242,9 +243,36 @@ footer {
   content: "< ";
 }
 
+#well-exam-schedule-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#well-exam-schedule-table, #well-exam-schedule-table th, #well-exam-schedule-table td {
+  border-bottom: 1px solid #7C8CF4;
+}
+
+#well-exam-schedule-table tr:hover {
+  background-color: #dee2e2;
+}
+
+#well-exam-schedule-table tr, #well-exam-schedule-table th, #well-exam-schedule-table td {
+  padding: 10px;
+}
+
+.col1 {
+  width: 20%;
+  border-right: 1px solid #7C8CF4;
+}
+
+.col2 {
+  width: 80%;
+}
+
 /* TRANSITIONS */
 
 #mainSlideContent {
+  position: static;
   width: 100%;
   opacity: 1;
   margin-left: 100px;
@@ -254,13 +282,14 @@ footer {
   transition: margin-left 1s, opacity 1s;
 }
 
-#mainSlideContent.slideLeft, #mainSlideContent.slideLeftTwo {
+#mainSlideContent.slideLeft, #mainSlideContent.slideLeftTwo, #mainSlideContent.slideLeftThree {
+  position: absolute;
   width: 100%;
   opacity: 0;
   margin-left: -150%;
 }
 
-#subSlideContent, #subSlideContentTwo {
+#subSlideContent, #subSlideContentTwo, #subSlideContentThree {
   opacity: 0;
   top: 150px;
   width: 85%;
@@ -272,8 +301,8 @@ footer {
   transition: all 1s;
 }
 
-#subSlideContent.slideLeft, #subSlideContentTwo.slideLeftTwo {
-  position: absolute;
+#subSlideContent.slideLeft, #subSlideContentTwo.slideLeftTwo, #subSlideContentThree.slideLeftThree {
+  position: static;
   top: 150px;
   width: 85%;
   opacity: 1;
