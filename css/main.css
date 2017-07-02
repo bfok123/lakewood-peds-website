@@ -56,10 +56,10 @@ header img {
 .navbtn:hover {
   color: #b5b5b5;
   padding-top: 25px;
-  -webkit-transition: border-top 0.5s, color 0.5s;
-  -moz-transition: border-top 0.5s, color 0.5s;
-  -o-transition: border-top 0.5s, color 0.5s;
-  transition: border-top 0.5s, color 0.5s;
+  -webkit-transition: border-top 0.5s;
+  -moz-transition: border-top 0.5s;
+  -o-transition: border-top 0.5s;
+  transition: border-top 0.5s;
   border-top-width: 5px;
   border-top-color: #7C8CF4;
   border-top-style: solid;
